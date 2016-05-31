@@ -1,0 +1,5 @@
+pe\edu\upc\filter\FiltroController.class
+pe\edu\upc\bean\Usuario.class
+pe\edu\upc\controller\SesionController.class
+pe\edu\upc\util\WebUtil.class
+pe\edu\upc\controller\ClienteController.class

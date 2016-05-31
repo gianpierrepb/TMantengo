@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" duration-ms="2083" started-at="2016-05-04T19:31:46Z" finished-at="2016-05-04T19:31:48Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="2083" started-at="2016-05-04T19:31:46Z" finished-at="2016-05-04T19:31:48Z">
+      <class name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+        <test-method status="PASS" signature="setUpClass()" name="setUpClass" is-config="true" duration-ms="1350" started-at="2016-05-04T19:31:46Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsertar()" name="testInsertar" duration-ms="166" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testInsertarIncorrecto()" name="testInsertarIncorrecto" duration-ms="101" started-at="2016-05-04T19:31:48Z" depends-on-methods="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testInsertar" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testObtenerIncorrecto()" name="testObtenerIncorrecto" duration-ms="0" started-at="2016-05-04T19:31:48Z" depends-on-methods="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testInsertarIncorrecto" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testObtener()" name="testObtener" duration-ms="16" started-at="2016-05-04T19:31:48Z" depends-on-methods="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testObtenerIncorrecto" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testActualizar()" name="testActualizar" duration-ms="85" started-at="2016-05-04T19:31:48Z" depends-on-methods="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testObtener" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="4" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testActualizarIncorrecto()" name="testActualizarIncorrecto" duration-ms="4" started-at="2016-05-04T19:31:48Z" depends-on-methods="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testActualizar" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testListar()" name="testListar" duration-ms="197" started-at="2016-05-04T19:31:48Z" depends-on-methods="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testActualizarIncorrecto" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testEliminar()" name="testEliminar" duration-ms="94" started-at="2016-05-04T19:31:48Z" depends-on-methods="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testListar" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod()" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="testEliminarIncorrecto()" name="testEliminarIncorrecto" duration-ms="15" started-at="2016-05-04T19:31:48Z" depends-on-methods="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testEliminar" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownClass()" name="tearDownClass" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+        <test-method status="PASS" signature="setUpMethod()" name="setUpMethod" is-config="true" duration-ms="0" started-at="2016-05-04T19:31:48Z" finished-at="2016-05-04T19:31:48Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

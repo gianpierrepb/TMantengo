@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Kirara" name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" tests="9" failures="0" timestamp="5 May 2016 00:31:48 GMT" time="2.083" errors="0">
+  <testcase name="testInsertar" time="0.166" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+  <testcase name="testInsertarIncorrecto" time="0.101" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+  <testcase name="testObtenerIncorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+  <testcase name="testObtener" time="0.016" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+  <testcase name="testActualizar" time="0.085" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+  <testcase name="testActualizarIncorrecto" time="0.004" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+  <testcase name="testListar" time="0.197" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+  <testcase name="testEliminar" time="0.094" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+  <testcase name="testEliminarIncorrecto" time="0.015" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+</testsuite>
