@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.765 sec
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.166 sec <<< FAILURE!
+testSumaNumeros(pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: ERROR CON LA PRUEBA UNITARIA: null
+	at org.testng.Assert.fail(Assert.java:89)
+	at pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testSumaNumeros(TMantengoClienteHibernateDaoTest.java:255)

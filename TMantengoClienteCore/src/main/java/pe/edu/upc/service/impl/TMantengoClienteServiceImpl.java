@@ -52,4 +52,5 @@ public class TMantengoClienteServiceImpl implements TMantengoClienteService {
     public Cliente obtenerClientePorDni(String dni) throws Exception {
         return clienteDao.obtenerClientePorDni(dni);
     }
+    
 }

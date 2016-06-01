@@ -132,5 +132,41 @@ public class TMantengoClienteHibernateDao extends BaseHibernateDao implements TM
         }
         return cliente;
     }
+    
+    public Boolean arrayIgualValidar (String[] nombres2){
+
+        String[] nombres1 = {"Pepelucho","Gepeto","Ximena"};
+
+        if (nombres2 != nombres1)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    public int sumaNumeros(int a, int b){
+        
+        Integer suma;
+        suma = a + b;
+        
+        return suma;
+    }
+    
+    public int restaNumeros(int a, int b){
+        
+        int resta;
+        resta = b - a;
+        
+        return resta;
+    }
+    
+    public String mensajeValidar( String mensaje){
+        
+        String mensajeValido = "Evolucion de Software";
+        
+        if(mensajeValido != mensaje)
+            return "Mensaje Incorrecto";
+        return "Mensaje Correcto";
+    }
 }
 

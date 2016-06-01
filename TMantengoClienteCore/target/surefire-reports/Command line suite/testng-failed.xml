@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)" preserve-order="false">
+    <classes>
+      <class name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+        <methods>
+          <include name="testInsertar"/>
+          <include name="testActualizar"/>
+          <include name="testListarNoVacioMensaje"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="testActualizarIncorrecto"/>
+          <include name="tearDownMethod"/>
+          <include name="testListar"/>
+          <include name="testSumaNumeros"/>
+          <include name="testObtenerIncorrecto"/>
+          <include name="testInsertarIncorrecto"/>
+          <include name="setUpMethod"/>
+          <include name="testObtener"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

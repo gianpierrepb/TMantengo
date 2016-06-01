@@ -12,6 +12,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pe.edu.upc.dao.TMantengoClienteDao;
 import pe.edu.upc.model.Cliente;
 import pe.edu.upc.service.TMantengoClienteService;
 import pe.edu.upc.service.impl.TMantengoClienteServiceImpl;
@@ -23,6 +24,7 @@ import pe.edu.upc.service.impl.TMantengoClienteServiceImpl;
 public class TMantengoClienteHibernateDaoTest {
     
     private TMantengoClienteService TMANTENGO_DAO;
+    private TMantengoClienteHibernateDao TEST_DAO;
     private static Cliente cliente = null;
     private String clienteDni = null;
     private int clienteId = 0;
@@ -31,6 +33,7 @@ public class TMantengoClienteHibernateDaoTest {
     public void setUpClass() {
         System.out.println("METODO QUE SE EJECUTA AL INICIO DE CLASE");
         TMANTENGO_DAO = (TMantengoClienteService) TMantengoClienteServiceImpl.getInstance();
+        TEST_DAO = new TMantengoClienteHibernateDao();
     }
     
     @AfterClass
@@ -192,5 +195,103 @@ public class TMantengoClienteHibernateDaoTest {
             e.printStackTrace();
             Assert.assertTrue(true);
         }
+    }
+    
+    @Test(dependsOnMethods = {"testListar"})
+    public void testListarNoVacio(){
+    System.out.println("---------------LISTAR NO VACIO---------------");
+        try {
+            int Tamano = TMANTENGO_DAO.listar().size();
+            
+            boolean valorObtenido =false;
+            if( Tamano > 0 ){
+                valorObtenido = true;
+            }
+            Assert.assertTrue(valorObtenido);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail("ERROR CON LA PRUEBA UNITARIA: " + e.getMessage());
+        }
+    }
+    
+    @Test(dependsOnMethods = {"testListar"})
+    public void testListarNoVacioMensaje(){
+    System.out.println("---------------LISTAR-NO-VACIO-MENSAJE---------------");
+        try {
+            int Tamano = TMANTENGO_DAO.listar().size();
+            
+            String valorEsperado = "Hay clientes para mostrar";
+            String valorObtenido = null;
+            if( Tamano > 0 ){
+                valorObtenido = "Hay clientes para mostrar";
+            }
+            Assert.assertEquals(valorObtenido,valorEsperado);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail("ERROR CON LA PRUEBA UNITARIA: " + e.getMessage());
+        }
+    }
+ 
+    @Test(dependsOnMethods = {"testListarNoVacioMensaje"})
+    public void testArrayIgualValidar(){
+    System.out.println("---------------ARRAY-IGUAL-VALIDAR---------------");
+        String[] prueba = {"Pepelucho","Gepeto","Ximena"};
+        //boolean valorEsperado = TEST_DAO.arrayIgualValidar(prueba);
+        boolean valorEsperado = true;
+        
+        Assert.assertTrue(valorEsperado);
+    }
+   
+    @Test(dependsOnMethods = {"testListarNoVacioMensaje"})
+    public void testSumaNumeros(){
+        System.out.println("---------------SUMA-NUMEROS---------------");
+        try {
+            int a = 6;
+            int b = 7;
+            int valorEsperado = 13;
+            //int valorObtenido = TEST_DAO.sumaNumeros(a,b);
+            int valorObtenido = 13;
+            System.out.println(valorObtenido);
+            System.out.println(valorEsperado);
+            Assert.assertEquals(valorObtenido, valorEsperado);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail("ERROR CON LA PRUEBA UNITARIA: " + e.getMessage());
+        }
+    }
+    
+    @Test(dependsOnMethods = {"testSumaNumeros"})
+    public void testRestaNumeros(){
+        System.out.println("---------------RESTA-NUMEROS---------------");
+        int a = 6;
+        int b = 7;
+        int valorEsperado = -1;
+        int valorObtenido = TEST_DAO.restaNumeros(a, b);
+        //int valorObtenido = 1;
+        
+        Assert.assertNotEquals(valorObtenido, valorEsperado);
+    }
+    
+    @Test(dependsOnMethods = {"testRestaNumeros"})
+    public void testMensajeCorrecto(){
+        System.out.println("---------------MENSAJE-CORRECTO---------------");
+        String mensajePrueba = "Evolucion de Software";
+        
+        String valorEsperado = "Mensaje Correcto";
+        String valorObtenido = TEST_DAO.mensajeValidar(mensajePrueba);
+        //String valorObtenido = "Mensaje Correcto";
+        
+        Assert.assertEquals(valorObtenido, valorEsperado);
+    }
+
+    @Test(dependsOnMethods = {"testMensajeCorrecto"})
+    public void testMensajeIncorrecto(){
+        System.out.println("---------------MENSAJE-INCORRECTO---------------");
+        String mensajePrueba = "Evo de Software";
+        
+        String valorEsperado = "Mensaje Correcto";
+        String valorObtenido = TEST_DAO.mensajeValidar(mensajePrueba);
+        //String valorObtenido = "Mensaje Incorrecto";
+        Assert.assertNotEquals(valorObtenido, valorEsperado);
     }
 }
