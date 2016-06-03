@@ -326,4 +326,22 @@ public class TMantengoClienteHibernateDaoTest {
         Assert.assertNotEquals(prueba,valorEsperado);
     }
     
+    @Test(dependsOnMethods = {"testArregloValidarIncorrecto"})
+    public void testObjectValidar(){
+    
+        
+        Cliente prueba = new Cliente();
+        prueba.setClienteId(100);
+        
+        Assert.assertEquals(prueba, TEST_DAO.validarCliente().getIdCliente());
+    }
+    
+    @Test(dependsOnMethods = {"testObjectValidar"})
+    public void testObjectValidarIncorrecto(){
+
+        Cliente prueba = new Cliente();
+        prueba.setClienteId(100);
+        
+        Assert.assertNotEquals(prueba, TEST_DAO.validarClienteIncorrecto().getIdCliente());
+    }
 }
