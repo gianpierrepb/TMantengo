@@ -195,5 +195,21 @@ public class TMantengoClienteHibernateDao extends BaseHibernateDao implements TM
          
         return miLista;
     }
+    
+    public Cliente validarCliente(){
+    
+    Cliente clientePrueba = new Cliente();
+    clientePrueba.setClienteId(100);
+    
+    return clientePrueba;
+    }
+    
+    public Cliente validarClienteIncorrecto(){
+    
+    Cliente clientePrueba = new Cliente();
+    clientePrueba.setClienteId(-100);
+    
+    return clientePrueba;
+    }
 }
 
