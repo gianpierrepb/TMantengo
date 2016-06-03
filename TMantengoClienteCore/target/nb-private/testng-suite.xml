@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Simple HTML-XML Suite">
+  
+  <test name="Simple HTML-XML test">
+    <classes>
+      <class name="TMantengoClienteHibernateDaoTest" />
+    </classes>
+  </test>
+</suite>
