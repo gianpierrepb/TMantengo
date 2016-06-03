@@ -298,7 +298,7 @@ public class TMantengoClienteHibernateDaoTest {
         System.out.println("---------------ARREGLO-CORRECTO---------------");
         List<String> prueba = new ArrayList<String>();
         prueba.add("1");
-        prueba.add("2");
+        prueba.add("1");
         prueba.add("3");
         prueba.add("4");
         prueba.add("5");
