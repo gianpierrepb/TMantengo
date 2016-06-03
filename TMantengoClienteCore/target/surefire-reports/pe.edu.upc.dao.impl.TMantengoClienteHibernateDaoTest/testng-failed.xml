@@ -7,6 +7,7 @@
         <methods>
           <include name="testInsertar"/>
           <include name="testMensajeIncorrecto"/>
+          <include name="testObjectValidarIncorrecto"/>
           <include name="testRestaNumeros"/>
           <include name="testMensajeCorrecto"/>
           <include name="testActualizar"/>
@@ -16,6 +17,7 @@
           <include name="testActualizarIncorrecto"/>
           <include name="testArregloValidarCorrecto"/>
           <include name="testArregloValidarIncorrecto"/>
+          <include name="testObjectValidar"/>
           <include name="tearDownMethod"/>
           <include name="testListar"/>
           <include name="testSumaNumeros"/>

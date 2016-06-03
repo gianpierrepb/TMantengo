@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Default suite">
-  <test verbose="10" name="Default test">
+<suite name="Simple HTML-XML Suite">
+  
+  <test name="Simple HTML-XML test">
     <classes>
-      <class name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
-        <methods>
-          <include name="doTest"/>
-        </methods>
-      </class> <!-- org.demo.Sample -->
+      <class name="TMantengoClienteHibernateDaoTest" />
     </classes>
-  </test> <!-- Default test -->
+  </test>
 </suite>
-<root>
-    
-</root>

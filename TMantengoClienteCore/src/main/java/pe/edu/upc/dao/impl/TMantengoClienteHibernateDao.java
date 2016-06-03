@@ -24,7 +24,9 @@ public class TMantengoClienteHibernateDao extends BaseHibernateDao implements TM
     public static TMantengoClienteHibernateDao getInstance() {
         return CLIENTE_DAO_IMPL;
     }
-
+    
+    Cliente clienteRetorno = new Cliente();
+    
     @Override
     public void insertar(Cliente entity) throws Exception {
         Session session = null;
@@ -196,20 +198,24 @@ public class TMantengoClienteHibernateDao extends BaseHibernateDao implements TM
         return miLista;
     }
     
+    public Cliente getCliente(){
+    
+        return clienteRetorno;
+    }
+    
     public Cliente validarCliente(){
     
-    Cliente clientePrueba = new Cliente();
-    clientePrueba.setClienteId(100);
+    Cliente clientePrueba = clienteRetorno;
     
     return clientePrueba;
     }
     
     public Cliente validarClienteIncorrecto(){
     
-    Cliente clientePrueba = new Cliente();
-    clientePrueba.setClienteId(-100);
+    Cliente clientePruebaIncorrecto = new Cliente();
     
-    return clientePrueba;
+    return clientePruebaIncorrecto;
     }
+    
 }
 

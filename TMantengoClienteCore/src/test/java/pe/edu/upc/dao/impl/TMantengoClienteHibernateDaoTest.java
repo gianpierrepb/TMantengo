@@ -250,10 +250,7 @@ public class TMantengoClienteHibernateDaoTest {
             int a = 6;
             int b = 7;
             int valorEsperado = 13;
-            //int valorObtenido = TEST_DAO.sumaNumeros(a,b);
-            int valorObtenido = 13;
-            System.out.println(valorObtenido);
-            System.out.println(valorEsperado);
+            int valorObtenido = TEST_DAO.sumaNumeros(a,b);
             Assert.assertEquals(valorObtenido, valorEsperado);
         } catch (Exception e) {
             e.printStackTrace();
@@ -298,7 +295,7 @@ public class TMantengoClienteHibernateDaoTest {
     
     @Test(dependsOnMethods = {"testMensajeIncorrecto"})
     public void testArregloValidarCorrecto(){
-    
+        System.out.println("---------------ARREGLO-CORRECTO---------------");
         List<String> prueba = new ArrayList<String>();
         prueba.add("1");
         prueba.add("2");
@@ -313,7 +310,8 @@ public class TMantengoClienteHibernateDaoTest {
  
     @Test(dependsOnMethods = {"testArregloValidarCorrecto"})
     public void testArregloValidarIncorrecto(){
-    
+        
+        System.out.println("---------------ARREGLO-INCORRECTO---------------");
         List<String> prueba = new ArrayList<String>();
         
         prueba.add("2");
@@ -329,19 +327,18 @@ public class TMantengoClienteHibernateDaoTest {
     @Test(dependsOnMethods = {"testArregloValidarIncorrecto"})
     public void testObjectValidar(){
     
+        System.out.println("---------------OBJETO-CORRECTO---------------");
+        Cliente prueba = TEST_DAO.getCliente();
         
-        Cliente prueba = new Cliente();
-        prueba.setClienteId(100);
-        
-        Assert.assertEquals(prueba, TEST_DAO.validarCliente().getIdCliente());
+        Assert.assertEquals(prueba, TEST_DAO.validarCliente());
     }
     
     @Test(dependsOnMethods = {"testObjectValidar"})
     public void testObjectValidarIncorrecto(){
 
-        Cliente prueba = new Cliente();
-        prueba.setClienteId(100);
+        System.out.println("---------------OBJETO-INCORRECTO---------------");
+        Cliente prueba = TEST_DAO.getCliente();
         
-        Assert.assertNotEquals(prueba, TEST_DAO.validarClienteIncorrecto().getIdCliente());
+        Assert.assertNotEquals(prueba, TEST_DAO.validarClienteIncorrecto());
     }
 }
