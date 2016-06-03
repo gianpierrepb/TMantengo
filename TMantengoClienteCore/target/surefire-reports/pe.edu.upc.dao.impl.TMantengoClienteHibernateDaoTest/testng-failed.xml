@@ -14,6 +14,8 @@
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
           <include name="testActualizarIncorrecto"/>
+          <include name="testArregloValidarCorrecto"/>
+          <include name="testArregloValidarIncorrecto"/>
           <include name="tearDownMethod"/>
           <include name="testListar"/>
           <include name="testSumaNumeros"/>

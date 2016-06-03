@@ -1,6 +1,8 @@
 package pe.edu.upc.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -167,6 +169,31 @@ public class TMantengoClienteHibernateDao extends BaseHibernateDao implements TM
         if(mensajeValido != mensaje)
             return "Mensaje Incorrecto";
         return "Mensaje Correcto";
+    }
+    
+    public List<String> arrayValidarCorrecto(){
+        
+        List<String> miLista = new ArrayList<String>();
+        miLista.add("1");
+        miLista.add("2");
+        miLista.add("3");
+        miLista.add("4");
+        miLista.add("5");
+        miLista.add("6");
+         
+        return miLista;
+    }
+    
+    public List<String> arrayValidarIncorrecto(){
+    
+        List<String> miLista = new ArrayList<String>();
+        miLista.add("2");
+        miLista.add("3");
+        miLista.add("4");
+        miLista.add("5");
+        miLista.add("10");
+         
+        return miLista;
     }
 }
 

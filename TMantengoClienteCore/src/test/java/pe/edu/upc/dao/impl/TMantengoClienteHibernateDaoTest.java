@@ -5,6 +5,7 @@
  */
 package pe.edu.upc.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -294,4 +295,35 @@ public class TMantengoClienteHibernateDaoTest {
         //String valorObtenido = "Mensaje Incorrecto";
         Assert.assertNotEquals(valorObtenido, valorEsperado);
     }
+    
+    @Test(dependsOnMethods = {"testMensajeIncorrecto"})
+    public void testArregloValidarCorrecto(){
+    
+        List<String> prueba = new ArrayList<String>();
+        prueba.add("1");
+        prueba.add("2");
+        prueba.add("3");
+        prueba.add("4");
+        prueba.add("5");
+        prueba.add("6");
+        
+        List<String> valorEsperado = TEST_DAO.arrayValidarCorrecto();
+        Assert.assertEquals(prueba,valorEsperado);
+    }
+ 
+    @Test(dependsOnMethods = {"testArregloValidarCorrecto"})
+    public void testArregloValidarIncorrecto(){
+    
+        List<String> prueba = new ArrayList<String>();
+        
+        prueba.add("2");
+        prueba.add("3");
+        prueba.add("4");
+        prueba.add("5");
+        prueba.add("16");
+        
+        List<String> valorEsperado = TEST_DAO.arrayValidarIncorrecto();
+        Assert.assertNotEquals(prueba,valorEsperado);
+    }
+    
 }

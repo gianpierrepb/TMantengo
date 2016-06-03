@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.775 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.618 sec
