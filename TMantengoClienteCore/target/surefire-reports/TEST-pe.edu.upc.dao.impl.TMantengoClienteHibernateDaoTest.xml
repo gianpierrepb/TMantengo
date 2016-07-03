@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="1" name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" time="2.751" errors="0" skipped="8">
+<testsuite tests="9" failures="0" name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" time="2.544" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_77\jre\bin"/>
@@ -62,165 +62,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testInsertar" time="0.672">
-    <failure message="NO SE EJECUTO CON EXITO LA PRUEBA UNITARIA could not execute statement" type="java.lang.AssertionError">java.lang.AssertionError: NO SE EJECUTO CON EXITO LA PRUEBA UNITARIA could not execute statement
-	at org.testng.Assert.fail(Assert.java:89)
-	at pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testInsertar(TMantengoClienteHibernateDaoTest.java:77)
-</failure>
-    <system-out>METODO QUE SE EJECUTA AL INICIO DE CLASE
-METODO QUE SE EJECUTA AL INICO DE CADA METODO
----------------INSERTAR---------------
-Hibernate: insert into cliente (Apellido, Dni, Edad, Nivelestudios, Nombre, Sexo, Telefono) values (?, ?, ?, ?, ?, ?, ?)
-</system-out>
-    <system-err>jul 03, 2016 9:10:25 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
-INFO: HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
-jul 03, 2016 9:10:25 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate Core {4.3.11.Final}
-jul 03, 2016 9:10:25 AM org.hibernate.cfg.Environment &lt;clinit&gt;
-INFO: HHH000206: hibernate.properties not found
-jul 03, 2016 9:10:25 AM org.hibernate.cfg.Environment buildBytecodeProvider
-INFO: HHH000021: Bytecode provider name : javassist
-jul 03, 2016 9:10:25 AM org.hibernate.cfg.Configuration configure
-INFO: HHH000043: Configuring from resource: hibernate.cfg.xml
-jul 03, 2016 9:10:25 AM org.hibernate.cfg.Configuration getConfigurationInputStream
-INFO: HHH000040: Configuration resource: hibernate.cfg.xml
-jul 03, 2016 9:10:25 AM org.hibernate.internal.util.xml.DTDEntityResolver resolveEntity
-WARN: HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
-jul 03, 2016 9:10:25 AM org.hibernate.cfg.Configuration doConfigure
-INFO: HHH000041: Configured SessionFactory: null
-jul 03, 2016 9:10:25 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
-WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
-jul 03, 2016 9:10:25 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
-INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/mydb?zeroDateTimeBehavior=convertToNull]
-jul 03, 2016 9:10:25 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
-INFO: HHH000046: Connection properties: {user=root, password=****}
-jul 03, 2016 9:10:25 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
-INFO: HHH000006: Autocommit mode: false
-jul 03, 2016 9:10:25 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
-INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-jul 03, 2016 9:10:26 AM org.hibernate.dialect.Dialect &lt;init&gt;
-INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-jul 03, 2016 9:10:26 AM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
-INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
-jul 03, 2016 9:10:26 AM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
-INFO: HHH000397: Using ASTQueryTranslatorFactory
-jul 03, 2016 9:10:26 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
-WARN: SQL Error: 1062, SQLState: 23000
-jul 03, 2016 9:10:26 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
-ERROR: Duplicate entry &apos;12345678&apos; for key &apos;Dni_UNIQUE&apos;
-jul 03, 2016 9:10:26 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
-WARN: SQL Warning Code: 1062, SQLState: 23000
-jul 03, 2016 9:10:26 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
-WARN: Duplicate entry &apos;12345678&apos; for key &apos;Dni_UNIQUE&apos;
-org.hibernate.exception.ConstraintViolationException: could not execute statement
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:72)
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:211)
-	at org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate.executeAndExtract(IdentityGenerator.java:96)
-	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:58)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3032)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3558)
-	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:98)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:492)
-	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:197)
-	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:181)
-	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:216)
-	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:334)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:289)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:195)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:126)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:209)
-	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:55)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:194)
-	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:49)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:90)
-	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:715)
-	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:707)
-	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:702)
-	at pe.edu.upc.dao.impl.TMantengoClienteHibernateDao.insertar(TMantengoClienteHibernateDao.java:37)
-	at pe.edu.upc.dao.impl.TMantengoClienteHibernateDao.insertar(TMantengoClienteHibernateDao.java:13)
-	at pe.edu.upc.service.impl.TMantengoClienteServiceImpl.insertar(TMantengoClienteServiceImpl.java:28)
-	at pe.edu.upc.service.impl.TMantengoClienteServiceImpl.insertar(TMantengoClienteServiceImpl.java:9)
-	at pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testInsertar(TMantengoClienteHibernateDaoTest.java:70)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;12345678&apos; for key &apos;Dni_UNIQUE&apos;
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
-	at com.mysql.jdbc.Util.getInstance(Util.java:372)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:973)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
-	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2145)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2081)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2066)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:208)
-	... 60 more
-</system-err>
-  </testcase>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testInsertarIncorrecto" time="0.672">
-    <skipped/>
-  </testcase>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testObtenerIncorrecto" time="0.672">
-    <skipped/>
-  </testcase>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testObtener" time="0.672">
-    <skipped/>
-  </testcase>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testActualizar" time="0.672">
-    <skipped/>
-  </testcase>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testActualizarIncorrecto" time="0.672">
-    <skipped/>
-  </testcase>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testListar" time="0.672">
-    <skipped/>
-  </testcase>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testEliminar" time="0.672">
-    <skipped/>
-  </testcase>
-  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testEliminarIncorrecto" time="0.672">
-    <skipped/>
-  </testcase>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testInsertar" time="0.192"/>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testInsertarIncorrecto" time="0.536"/>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testObtenerIncorrecto" time="0"/>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testObtener" time="0"/>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testActualizar" time="0"/>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testActualizarIncorrecto" time="0"/>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testListar" time="0"/>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testEliminar" time="0"/>
+  <testcase classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" name="testEliminarIncorrecto" time="0.015"/>
 </testsuite>
