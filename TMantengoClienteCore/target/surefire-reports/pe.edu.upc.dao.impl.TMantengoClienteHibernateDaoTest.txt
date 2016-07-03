@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.201 sec
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 2.751 sec <<< FAILURE!
+testInsertar(pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest)  Time elapsed: 0.672 sec  <<< FAILURE!
+java.lang.AssertionError: NO SE EJECUTO CON EXITO LA PRUEBA UNITARIA could not execute statement
+	at org.testng.Assert.fail(Assert.java:89)
+	at pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testInsertar(TMantengoClienteHibernateDaoTest.java:77)

@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="Kirara" name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" tests="20" failures="0" timestamp="3 Jun 2016 19:06:12 GMT" time="1.947" errors="0">
-  <testcase name="testInsertar" time="0.199" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testInsertarIncorrecto" time="0.12" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testObtenerIncorrecto" time="0.005" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testObtener" time="0.022" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testActualizar" time="0.075" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testActualizarIncorrecto" time="0.011" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testListar" time="0.178" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testEliminar" time="0.132" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testEliminarIncorrecto" time="0.006" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testListarNoVacio" time="0.003" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testListarNoVacioMensaje" time="0.006" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testArrayIgualValidar" time="0.001" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testSumaNumeros" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testRestaNumeros" time="0.001" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testMensajeCorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testMensajeIncorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testArregloValidarCorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testArregloValidarIncorrecto" time="0.001" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testObjectValidar" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
-  <testcase name="testObjectValidarIncorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest"/>
+<testsuite hostname="Kirara" name="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest" tests="9" failures="1" timestamp="3 Jul 2016 14:10:26 GMT" time="1.657" errors="0">
+  <testcase name="testInsertar" time="0.156" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <failure type="java.lang.AssertionError" message="NO SE EJECUTO CON EXITO LA PRUEBA UNITARIA could not execute statement">
+      <![CDATA[java.lang.AssertionError: NO SE EJECUTO CON EXITO LA PRUEBA UNITARIA could not execute statement
+	at pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest.testInsertar(TMantengoClienteHibernateDaoTest.java:77)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testInsertarIncorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testObtenerIncorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testObtener" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testActualizar" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testActualizarIncorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testListar" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testEliminar" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testEliminarIncorrecto" time="0.0" classname="pe.edu.upc.dao.impl.TMantengoClienteHibernateDaoTest">
+    <skipped/>
+  </testcase>
 </testsuite>

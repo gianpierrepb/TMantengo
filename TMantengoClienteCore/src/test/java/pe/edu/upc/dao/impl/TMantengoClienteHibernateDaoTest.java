@@ -61,7 +61,7 @@ public class TMantengoClienteHibernateDaoTest {
             cliente = new Cliente();
             cliente.setApellido("PRUEBA");
             cliente.setNombre("PRUEBA");
-            cliente.setDni("12345678");
+            cliente.setDni("64821792");
             cliente.setEdad("24");
             cliente.setSexo("MASCULINO");
             cliente.setNivelEstudios("UNIVERSITARIO");
